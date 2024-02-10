@@ -39,7 +39,7 @@ class PhoneBook:
         end_index = start_index + contacts_per_page
         contacts = self.contacts[start_index:end_index]
         for i, contact in enumerate(contacts):
-            print(f"{i + (contacts_per_page * (page - 1)):3}. \t{"Фамилия: " + contact.surname:<25}{"Имя: " + contact.name:<35}{"Отчество: " + contact.patronymic:<35}\n\t{"Орг.: " + contact.organization:<25}{"Раб.телефон: " + contact.work_phone:<35}{"Сот.телефон: " + contact.personal_phone:<35}\n{self.hr}")
+            print(f"{i + (contacts_per_page * (page - 1)):3}. \t{"Фамилия: " + contact.surname:<35}{"Имя: " + contact.name:<35}{"Отчество: " + contact.patronymic:<35}\n\t{"Орг.: " + contact.organization:<35}{"Раб.телефон: " + contact.work_phone:<35}{"Сот.телефон: " + contact.personal_phone:<35}\n{self.hr}")
 
     def save(self):
         with open("phone_book.csv", 'w', newline='', encoding="utf-8") as f:
