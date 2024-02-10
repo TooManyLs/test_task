@@ -45,7 +45,14 @@ class PhoneBook:
         with open("phone_book.csv", 'w', newline='', encoding="utf-8") as f:
             writer = csv.writer(f)
             for contact in self.contacts:
-                writer.writerow([contact.surname, contact.name, contact.patronymic, contact.organization, contact.work_phone, contact.personal_phone])
+                writer.writerow([
+                    contact.surname, 
+                    contact.name, 
+                    contact.patronymic, 
+                    contact.organization, 
+                    contact.work_phone, 
+                    contact.personal_phone
+                    ])
 
 command_list = [
     "1. Добавить контакт",
