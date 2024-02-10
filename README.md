@@ -13,7 +13,9 @@
 - `add_contact`: Добавляет контакт в телефонную книгу.
 - `edit_contact`: Редактирует контакт в телефонной книге по указанному индексу.
 - `search_contacts`: Возвращает список контактов, которые соответствуют заданным критериям поиска.
+![search](https://github.com/TooManyLs/test_task/assets/105962560/0fce3375-6d39-4075-b463-9db2db325f7a)
 - `display_contacts`: Отображает контакты на указанной странице.
+![disp](https://github.com/TooManyLs/test_task/assets/105962560/385967a4-fed5-4654-9ad0-1f8cc923397e)
 - `save`: Сохраняет текущие контакты в файл "phone_book.csv".
 
 ### Главные методы
